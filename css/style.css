@@ -10,6 +10,11 @@ body{
   font-weight: 500;
 }
 
+h2 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.6em;
@@ -102,6 +107,7 @@ header nav ul li a:hover {
   background-image: url('../img/jumbo.png');
   background-size: cover;
   background-position: center;
+  padding: 90px 0 150px;
 }
 
 .jumbotron .content {
@@ -117,8 +123,8 @@ header nav ul li a:hover {
 }
 
 .jumbotron .content h1{
-  font-size: 3em;
-  margin-bottom: 40px;
+  font-size: 3.2em;
+  margin-bottom: 35px;
 }
 
 .jumbotron .btn-big {
@@ -126,15 +132,16 @@ header nav ul li a:hover {
 }
 
 /* MAIN */
-main section, .jumbotron {
+main section {
   padding: 115px 0;
-}
-
-main section:nth-child(even) {
-  background-color: #FFFFFF;
+  color: #23272a;
 }
 
 main section:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+main section:nth-child(even) {
   background-color: #F6F6F6;
 }
 
@@ -145,7 +152,7 @@ main section .container {
   flex-wrap: wrap;
 }
 
-main section:nth-child(odd) .container {
+main section:nth-child(even) .container {
   flex-wrap: wrap-reverse;
 }
 
@@ -160,14 +167,23 @@ main section:last-child .row {
   height: 500px;
   width: 60%;
   min-width: 400px;
-  background-color: lightskyblue;
 }
 
 .row .col-txt {
   height: 500px;
   width: 40%;
   min-width: 265px;
-  background-color: lightpink;
+  padding-top: 28px;
+}
+
+.row .col-txt:nth-child(even) {
+  padding-left: 100px;
+  padding-right: 25px;
+}
+
+.row .col-txt:nth-child(odd) {
+  padding-left: 25px;
+  padding-right: 100px;
 }
 
 /* FOOTER */
