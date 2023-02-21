@@ -1,0 +1,158 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.logo {
+  border: 1px dashed black;
+}
+
+.btn {
+  border: 1px dashed black;
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  background-color: #404EED;
+  padding: 30px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lightsalmon;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  border: 1px dashed black;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  background-color: lightblue;
+}
+
+.jumbotron .content {
+  background-color: lightcoral;
+  height: 350px;
+  width: 40%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+/* MAIN */
+main section,
+.jumbotron {
+  padding: 115px 0;
+}
+
+main section:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+main section:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+
+main section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main section:nth-child(odd) .container {
+  flex-wrap: wrap-reverse;
+}
+
+main section:last-child .row {
+  height: 300px;
+  width: 100%;
+  background-color: lightgreen;
+  border: 1px dashed black;
+}
+
+.row .col-img {
+  height: 500px;
+  width: 60%;
+  min-width: 400px;
+  background-color: lightskyblue;
+}
+
+.row .col-txt {
+  height: 500px;
+  width: 40%;
+  min-width: 265px;
+  background-color: lightpink;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #23272A;
+  padding: 80px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .container:first-child {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #5865F2;
+}
+
+footer .container:last-child {
+  margin-top: 30px;
+  background-color: lightcyan;
+}
+
+footer .container .col {
+  background-color: lightgoldenrodyellow;
+  flex-grow: 1;
+  height: 350px;
+  border: 1px dashed black;
+}
+
+footer .container .col:first-child {
+  background-color: lightseagreen;
+  flex-grow: 2;
+  border: 1px dashed black;
+}
